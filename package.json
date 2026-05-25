@@ -4,7 +4,14 @@
   "description": "***prep for tech interview***\r A collaborative, real-time project management dashboard where a user can upload a product brief, and an AI agent breaks it down into actionable tasks.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently -n frontend,backend -c cyan,green \"npm --prefix frontend run dev\" \"npm --prefix backend run start:dev\"",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run start:dev",
+    "start": "concurrently -n frontend,backend -c cyan,green \"npm --prefix frontend run start\" \"npm --prefix backend run start:prod\"",
+    "start:frontend": "npm --prefix frontend run start",
+    "start:backend": "npm --prefix backend run start:prod",
+    "build": "npm --prefix frontend run build && npm --prefix backend run build",
+    "lint": "npm --prefix frontend run lint && npm --prefix backend run lint"
   },
   "repository": {
     "type": "git",
@@ -21,5 +28,5 @@
   "devDependencies": {
     "concurrently": "^9.2.1"
   },
-  "private": "true"
+  "private": true
 }
