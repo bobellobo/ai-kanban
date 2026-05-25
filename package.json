@@ -1,0 +1,25 @@
+{
+  "name": "ai-kanban",
+  "version": "1.0.0",
+  "description": "***prep for tech interview***\r A collaborative, real-time project management dashboard where a user can upload a product brief, and an AI agent breaks it down into actionable tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobellobo/ai-kanban.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bobellobo/ai-kanban/issues"
+  },
+  "homepage": "https://github.com/bobellobo/ai-kanban#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "private": "true"
+}
