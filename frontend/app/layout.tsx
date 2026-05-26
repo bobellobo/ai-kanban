@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Kanban",
-  description: "Generate structured feature plans from product ideas.",
+  title: "AI-powered Kanban",
+  description: "Generate structured feature plans and actionnable tasks from product ideas.",
 };
 
 export default function RootLayout({
