@@ -94,13 +94,13 @@ export default function Home() {
 
             <div className="flex items-center gap-3">
               <a
-                href="#access"
+                href="/project"
                 className="hidden rounded-full px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-200/70 sm:inline-flex"
               >
                 Sign In
               </a>
               <a
-                href="#access"
+                href="/project"
                 className="inline-flex rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
               >
                 Sign Up
@@ -193,13 +193,13 @@ export default function Home() {
 
                 <div className="mt-2 flex flex-col gap-3 sm:flex-row">
                   <a
-                    href="/generate"
+                    href="/project"
                     className="inline-flex flex-1 items-center justify-center rounded-full bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
                   >
                     Sign In
                   </a>
                   <a
-                    href="/generate"
+                    href="/project"
                     className="inline-flex flex-1 items-center justify-center rounded-full border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-950"
                   >
                     Sign Up
@@ -315,7 +315,7 @@ export default function Home() {
 
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="#access"
+                  href="/kanban"
                   className="inline-flex rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
                 >
                   Sign Up
