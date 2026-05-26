@@ -21,7 +21,7 @@ let FeaturesController = class FeaturesController {
     constructor(featuresService) {
         this.featuresService = featuresService;
     }
-    async generate(payload) {
+    generate(payload) {
         return this.featuresService.generateFeature(payload);
     }
 };
@@ -31,7 +31,7 @@ __decorate([
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [generate_feature_dto_1.GenerateFeatureDto]),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", void 0)
 ], FeaturesController.prototype, "generate", null);
 exports.FeaturesController = FeaturesController = __decorate([
     (0, common_1.Controller)('api/features'),

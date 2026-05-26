@@ -3,10 +3,10 @@ import { GenerateFeatureDto } from './dto/generate-feature.dto';
 export declare class FeaturesController {
     private readonly featuresService;
     constructor(featuresService: FeaturesService);
-    generate(payload: GenerateFeatureDto): Promise<{
+    generate(payload: GenerateFeatureDto): {
         status: string;
         message: string;
         input: GenerateFeatureDto;
         generatedAt: string;
-    }>;
+    };
 }

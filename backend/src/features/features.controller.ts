@@ -7,7 +7,7 @@ export class FeaturesController {
   constructor(private readonly featuresService: FeaturesService) {}
 
   @Post('generate')
-  async generate(@Body() payload: GenerateFeatureDto) {
+  generate(@Body() payload: GenerateFeatureDto) {
     return this.featuresService.generateFeature(payload);
   }
 }

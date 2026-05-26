@@ -9,10 +9,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FeaturesService = void 0;
 const common_1 = require("@nestjs/common");
 let FeaturesService = class FeaturesService {
-    async generateFeature(payload) {
+    generateFeature(payload) {
         return {
             status: 'stub',
-            message: 'LangChain structured output wiring goes in FeaturesService.generateFeature().',
+            message: 'Feature generation logic has not been implemented yet.',
             input: payload,
             generatedAt: new Date().toISOString(),
         };
