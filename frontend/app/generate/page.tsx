@@ -2,12 +2,13 @@
 
 import { FormEvent, useState } from "react";
 import TaskCard from "../project/components/TaskCard";
+import { Tasks } from "@/types/workspace-domain";
 
-const mockedTasks = [
-  { title: "Review generated brief structure", meta: "Example task · Product" },
-  { title: "Break feature into implementation tickets", meta: "Example task · Engineering" },
-  { title: "Validate edge cases and blockers", meta: "Example task · QA" },
-  { title: "Prepare sprint-ready acceptance criteria", meta: "Example task · Delivery" },
+const mockedTasks: Tasks = [
+  { id: "1", title: "Review generated brief structure", description: "Review and validate the generated brief structure", status: "todo", projectId: "project-1" },
+  { id: "2", title: "Break feature into implementation tickets", description: "Break down the feature into smaller implementation tickets", status: "todo", projectId: "project-1" },
+  { id: "3", title: "Validate edge cases and blockers", description: "Identify and validate potential edge cases and blockers", status: "todo", projectId: "project-1" },
+  { id: "4", title: "Prepare sprint-ready acceptance criteria", description: "Prepare acceptance criteria ready for sprint implementation", status: "todo", projectId: "project-1" },
 ];
 
 function LoadingTaskCard() {
@@ -139,7 +140,7 @@ export default function FeatureBuilder() {
 
                   <div className="grid gap-3">
                     {mockedTasks.map((task) => (
-                      <TaskCard key={task.title} title={task.title} meta={task.meta} />
+                      <TaskCard key={task.id} task={task} />
                     ))}
                   </div>
 
